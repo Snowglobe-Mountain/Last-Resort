@@ -22,8 +22,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx standard",
-    "lint:dev": "npx standard --fix",
+    "lint": "npx ts-standard",
+    "lint:dev": "npx ts-standard --fix",
     "compile": "npx tsc"
   },
   "dependencies": {
