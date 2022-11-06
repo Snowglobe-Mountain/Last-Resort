@@ -1,0 +1,45 @@
+{
+  "name": "last-resort",
+  "version": "0.1.0",
+  "repository": "github:Snowglobe-Mountain/Last-Resort",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "contributors": [
+    {
+      "name": "CovenEsme",
+      "url": "https://github.com/CovenEsme"
+    },
+    {
+      "name": "Muzugalium",
+      "url": "https://github.com/Muzugalium"
+    },
+    {
+      "name": "Arcana",
+      "url": "https://github.com/ArcanaOfSouls"
+    }
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npx standard",
+    "lint:dev": "npx standard --fix",
+    "compile": "npx tsc"
+  },
+  "dependencies": {
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.8",
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.2",
+    "next": "13.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "jest": "^29.2.2",
+    "tailwindcss": "^3.2.2",
+    "ts-standard": "^12.0.1"
+  }
+}
