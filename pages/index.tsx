@@ -21,6 +21,7 @@ const Home: JSX.Element = () => {
             Next.js!
           </a>
         </h1>
+        <ThemeToggle />
 
         <p className='my-16 text-base'>
           Get started by editing{' '}
