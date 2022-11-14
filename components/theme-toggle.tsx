@@ -5,20 +5,20 @@ import Switch from 'react-switch'
 const ThemeToggle: React.FC = () => {
   const { theme, setTheme } = useTheme()
 
-  const dark = theme === 'dark'
+  const currentTheme = theme === 'light'
 
-  const [checked, setChecked] = useState(dark)
+  const [checked, setChecked] = useState(currentTheme)
   const [mounted, setMounted] = useState(false)
-
-  const handleChange = (nextChecked: boolean): void => {
-    setChecked(nextChecked)
-  }
 
   useEffect(() => setMounted(true), [])
 
   useEffect(() => {
-    setTheme(checked ? 'dark' : 'light')
+    setTheme(checked ? 'light' : 'dark')
   }, [checked, setTheme])
+
+  const handleChange = (nextChecked: boolean): void => {
+    setChecked(nextChecked)
+  }
 
   if (!mounted) return null
 
