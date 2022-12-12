@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 
-const App: JSX.Element = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ThemeProvider enableSystem attribute='class'>
       <Component {...pageProps} />
