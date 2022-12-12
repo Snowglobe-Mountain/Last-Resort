@@ -3,7 +3,7 @@ import ThemeToggle from '../components/theme-toggle'
 
 const Home = (): JSX.Element => {
   return (
-    <div className='py-0 px-8'>
+    <div>
       <Head>
         <title>Skyward Sword Randomizer Tracker</title>
         <meta name='description' content='A web tracker for The Legend of Zelda: Skyward Sword Randomizer.' />
@@ -11,7 +11,7 @@ const Home = (): JSX.Element => {
       </Head>
 
       <main className='bg-white dark:bg-black min-h-screen p-2 flex flex-col'>
-        <div className='text-end'>
+        <div className='self-end'>
           <ThemeToggle />
         </div>
       </main>
